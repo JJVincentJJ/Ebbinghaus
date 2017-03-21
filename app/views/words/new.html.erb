@@ -1,0 +1,15 @@
+<h1>Enter New Word</h1>
+
+<%= form_for :word, url: words_path do |f|%>
+<%= render 'shared/error_messages' %>
+<div class= "form-group">
+<%= f.label :word %>
+<%= f.text_field :word, class: "form-control" %>
+</div>
+<div class= "form-group">
+<%= f.label :description %>
+<%= f.text_field :description , class: "form-control"%>
+</div>
+<%= f.submit  "Save Word", class: "btn btn-default" %>
+<%= link_to "Done", words_path, class: "btn btn-primary" %>
+<% end %>

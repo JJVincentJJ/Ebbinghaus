@@ -1,0 +1,23 @@
+// Place all the styles related to the Word controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+form{
+	padding-left: 250px;
+	padding-right: 250px;
+	padding-top: 100px;
+}
+.form-group{
+	padding-bottom: 20px;
+}
+.list-group{
+	padding-top: 80px;
+	padding-left: 250px;
+	padding-right: 250px;
+	
+	.btn{
+		border-width: 0px;
+		position: relative;
+		left: 80.5%;
+		
+	}
+}

@@ -1,0 +1,12 @@
+<h1>The words you should remeber</h1>
+ 
+<ul class= "list-group">
+    <% @words.each do |w| %>
+    <li class="list-group-item">
+     <%= link_to 'Remembered', w, method: :delete, class: "btn btn-danger btn-sm" %>
+      </button>
+      <h4 class="list-group-item-heading"><%= w.word %></h4>
+      <p class="list-group-item-text"><%= w.description %></p>
+    </li>
+    <% end %>
+</ul>
